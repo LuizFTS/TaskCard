@@ -1,0 +1,11 @@
+.section-tasks {
+    text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 2rem;
+
+    &__title{
+        font-size: 3.6rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}

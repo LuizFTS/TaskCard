@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Icon -->
+    <link rel="icon" href="img/L.png">
+    
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Organização e planejamento!</title>
+</head>
+<body>
+    <div class="form">
+        <div class="form__body">
+
+            <h1 class="heading-secondary u-padding-top-medium u-padding-bottom-medium">Quantas tarefas quer adicionar no seu cartão?</h1>
+            <a class="form__body--close">
+                <i class="fas fa-times"></i>
+            </a>
+            <div id="formulario">
+                <form class="formulario__quantidade">
+                    <select list="quantidade" class="formulario__quantidade--select" id="quantidade"></select>
+                    <input value="Adicionar" type="submit" id="submit-quantidade" class="btn">
+                </form>
+                <div class="centralizar-itens">
+                    <form class="formulario__itens"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__background">
+            <a href="#" class="header__button btn-header" id="addtask">Adicionar novo Cartão</a>
+            <p class="header__paragraph paragraph">Cada cartão pode possuir até 10 tarefas</p>
+        </div>
+    </header>
+    <main>
+        <section class="section-tasks">
+            <h2 class="heading-primary u-padding-top-medium u-padding-bottom-medium">Minhas tarefas</h2>
+            <div class="row row1" id="localcartao"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_row row">
+            <p>&copy;2021 Luiz Filipe Tosta da Silva</p>
+        </div>
+    </footer>
+    <script src="js/formulario.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

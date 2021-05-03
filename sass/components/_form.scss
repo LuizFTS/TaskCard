@@ -1,0 +1,113 @@
+.form {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($black, .8);
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+
+
+    &__body {
+        position: relative;
+        text-align: center;
+        background-color: $white;
+        border-radius: 2px;
+        position: inherit;
+        width: 40%;
+        @include center-position;
+
+        &--close {
+            position: absolute;
+            color: $color-primary;
+            font-size: 2rem;
+            top: 10%;
+            right: 5%;
+            backface-visibility: hidden;
+
+            :hover {
+                color: $color-tertiary;
+                transform: scale(1.1);
+                transition: all .3s;
+            }
+        }
+    }
+
+    
+}
+
+.centralizar-itens {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.formulario {
+    
+    &__quantidade {
+        
+        &--select{       
+            border: solid 1px rgb(255, 115, 0);
+            padding: .8rem;
+        
+            &:focus {
+                outline: none;
+                border-color: rgb(22, 21, 122);
+            }
+        }
+    }
+    &__itens {
+        margin-top: 1rem;
+
+        &--title {
+            color: $black;
+            font-size: 1.6rem;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+        &--input {
+            border: solid 1px rgb(255, 115, 0);
+            padding: .8rem 0;
+            width: 60%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            &:focus {
+                outline: none;
+                border: solid 1px rgb(22, 21, 122);
+            }
+        }
+
+        &--itens {
+            
+            &-input {
+                border: solid 1px rgb(255, 115, 0);
+                padding: .8rem 0;
+                width: 70%;
+                margin-bottom: 1rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+    
+            &-label {
+                color: $black;
+                font-size: 1.6rem;
+                padding: 1rem;
+                margin: 0 auto;
+            }
+
+
+        }
+        &--buttons{
+
+            &-submit {
+                margin: 1rem 2rem;
+            }
+            &-reset {
+                margin: 1rem 2rem;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,32 @@
+.header {
+    height: 20rem;
+    position: relative;
+
+    &__background {
+        background-color: $color-secondary;
+        height: 100%;
+    }
+
+    &__button, &__button:link, &__button:visited {
+        @include center-position;
+        transition: all .2s;
+    }
+
+    &__button:hover {
+        transform: translate(-50%, -60%);
+    }
+
+    &__button:active {
+        transform: translate(-50%, -55%);
+        box-shadow: 3px 2px 1rem rgba($black, .8);
+    }
+
+
+    &__paragraph {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
