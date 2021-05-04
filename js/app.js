@@ -28,8 +28,3 @@ for(let i=1; i <= 10; i++){
     let item = document.querySelector(`.item-formulario-${i}`);
     itemFormulario.push(item);
 };
-
-
-
-// Load from storage
-document.addEventListener('DOMContentLoaded', pegarTarefasLocalStorage);
